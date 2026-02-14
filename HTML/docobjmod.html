@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 id="textchange">Document Object Model</h1>
+    <div>div</div>
+    <div>
+        <p>div1</p>
+        <p>div2</p>
+        <p>div3</p>
+    </div>
+    <button onclick="show()">Click</button>
+    <script>
+        function show() {
+            document.getElementById("textchange").innerHTML = 'DOM';
+        }
+
+        document.querySelector("div").style.backgroundColor = 'gray';
+        const a = document.querySelectorAll("p");
+        a.forEach (p => {
+            p.style.border = '2px solid black';
+            p.style.color = 'red';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+</head>
+<body>
+    <h1 id ="mainHeading">Title <i>Demo </i></h1>
+    <button id = "changeTextButton"> Change Text </button>
+<script>
+    const heading = document.getElementById('mainHeading')
+    const button = document.getElementById('changeTextButton')
+
+    button.addEventListener('click', () => {
+        if(heading.textContent != "Hello, World!") {
+        heading.textContent = "Hello, World!";
+        } else {
+            heading.textContent = "Title Demo";
+        }
+    });
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "colorBox" style = "width : 100px; height: 100px; border: solid; background-color: red;"> </div>
+    <button id="toggle"> Toggle Colour</button>
+    <script>
+        const colorbox = document.getElementById('colorBox');
+        const toggle = document.getElementById('toggle');
+        toggle.addEventListener('click' , () => {
+            const currentColor = colorbox.style.backgroundColor;
+            if (currentColor === 'red') {
+                colorbox.style.backgroundColor = 'blue';
+            } else {
+                colorbox.style.backgroundColor = 'red';
+            }
+        });
+    </script>
+</body>
+</html>

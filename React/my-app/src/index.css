@@ -1,0 +1,11 @@
+h1 {
+  color:hsl(348, 51%, 15%);
+  background-color: hsl(348, 38%, 55%);
+  text-align: center;
+}
+button {
+  border: 1px solid black;
+  color: hsl(349, 70%, 51%);
+  background-color: blanchedalmond;
+  align-content: center;
+}

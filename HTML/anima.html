@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(234, 230, 229);
+            animation-name: changecolor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(39, 138, 236);
+            animation-name: div;
+        }
+        h1 {
+            animation-name: h1;
+            animation-duration: 15s;
+        }
+        @keyframes h1 {
+            0% {opacity: 0;}
+            100% {opacity:100;}
+        }
+
+        @keyframes div {
+            0% {background-color: rgba(169, 97, 68, 0.789);}
+            25% {background-color: rgba(169, 97, 68,56);}
+            50% {background-color: rgba(169, 657, 68, 0.889);}
+            100% {background-color: rgba(169, 97, 68, 12);}
+
+        }
+    </style>
+</head>
+<body>
+        <h1>Animation in CSS</h1>
+        <div></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+
+    </div>
+    <script>
+        const d = document.querySelector('div');
+        d.addEventListener('click', () => { 
+            alert("Div Sinsle cllicked"); 
+            d.style.backgroundColor = 'red';
+        });
+
+        d.addEventListener('mouseover', () => {
+            d.style.backgroundColor = 'gray';
+        });
+
+        d.addEventListener('mousemove', (event) => {
+            d.innerText = `x: ${event.offsetX} y: ${event.offsetY}`;
+        });
+    </script>
+</body>
+</html>

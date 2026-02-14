@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content changing</title>
+</head>
+<body>
+    <h1>Text Content Changing</h1>
+    <p>Text Content Changing</p>
+    <script>
+         heading = document.querySelector('h1');
+        heading.textContent = "Welcome to <span style = 'color: blue;'> JavaScript</span>";
+
+        const inner = document.querySelector('p');
+        inner.innerHTML = "Welcome to <span style = 'color: blue;'> JavaScript</span>";
+    </script>
+</body>
+</html>

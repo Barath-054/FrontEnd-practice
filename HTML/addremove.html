@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddRemove</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            border: 2px solid darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">Remove</button>
+
+<script>
+    function add() {
+        b = document.querySelector("body");
+        mydiv = document.createElement("div");
+        b.appendChild(mydiv);
+    }
+    function remove() {
+        a = document.querySelector("body");
+        y = document.querySelector("div");
+        a.removeChild(y);
+    }
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: rgb(212, 212, 175);
+            color: rgb(40, 40, 14);
+        }
+    </style>
+</head>
+<body>
+    <h2 id="highlightText">Hello!</h2>
+
+    <button onclick="add()">Adding Highlight</button>
+    <button onclick="remove()">Remove Highlight</button>
+    <button onclick="toggle()">Toggle Highlight</button>
+    <button onclick="check()">Check Highlight</button>
+
+    <script>
+        const h = document.getElementById("highlightText");
+
+        function add() {
+            h.classList.add("highlight");
+        }
+
+        function remove() {
+            h.classList.remove("highlight");
+        }
+
+        function toggle() {
+            h.classList.toggle("highlight");
+        }
+
+        function check() {
+            if (h.classList.contains("highlight")) {
+                alert("Highlight is present!");
+            } else {
+                alert("Highlight is not present!");
+            }
+        }
+    </script>
+</body>
+</html>
