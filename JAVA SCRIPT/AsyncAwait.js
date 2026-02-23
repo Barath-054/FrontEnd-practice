@@ -64,7 +64,7 @@ function wait(ms) {
             reject(new Error("Not Found."));
         }
    });
-}
+ }
 
 bookTickets()
 

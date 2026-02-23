@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TaskForm from './component/TaskForm'
 import TaskList from './component/TaskList'
 import ProgressTracker from './component/ProgressTracker'
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
+
+useEffect(() => {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+})
+
   const addTask = (task) => {
-    setTasks(task);
-  }
+    setTasks([...tasks, task]);
+  };
+  
   return (
     <div>
       <header>
